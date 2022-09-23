@@ -1,0 +1,32 @@
+<html><head>
+<title>registration FORM</title>
+<style> 
+form {border:orange; border-width:2px;padding:10px; border-style:solid;}
+body {padding: 0px 200px 0px 200px;}
+</style>
+<script>
+function aaa(){var a=parseInt(form1.a.value);var b=parseInt(form1.b.value);
+var c=""
+ for (i = a; i <= b; i++) 
+{  if (i == 1 || i == 0)
+ continue;  
+flag = 1; 
+for (j = 2; j <= i / 2; ++j) 
+{ if (i % j == 0) 
+{ flag = 0; break; }
+ } if (flag == 1) c=c+i+" "; }
+
+form1.r.value=c;}
+</script>
+</head>
+<body>
+<FORM name=form1 action="PAYMENT HTML"><center>
+<legend style="color:blue;"><b> <i>Prime Numbers</i></b></legend></center>
+<p><b>Enter the  Number: </b><input type="text" name="a" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+<p><b>Enter the Second Number: </b><input type="text" name="b" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+
+<input type="button"value="Prime" onclick="aaa()">
+</p><p><b> Result: </b> <input type="text" name="r"placeholder="Ghandhi" cols="100" required></p> 
+</form>
+</Body>
+</html>

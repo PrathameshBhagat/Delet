@@ -1,0 +1,54 @@
+<html><head>
+<title>registration FORM</title>
+<style> 
+form {border:orange; border-width:2px;padding:10px; border-style:solid;}
+body {padding: 0px 200px 0px 200px;}
+</style></head>
+<body>
+<FORM name=form1 action="PAYMENT HTML"><center>
+<legend style="color:blue;"><b> <i>Calculator</i></b></legend></center>
+<p><b>First Number: </b><input type="text" name="a" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+<b> Last Second: </b> <input type="text" name="b" placeholder="200" required></p> 
+<input type="button"value="+" onclick="form1.r.value=parseInt(form1.a.value)+parseInt(form1.b.value)">
+<input type="button"value="-" onclick="form1.r.value=parseInt(form1.a.value)-parseInt(form1.b.value)">
+<input type="button"value="*" onclick="form1.r.value=parseInt(form1.a.value)*parseInt(form1.b.value)">
+<input type="button"value="/" onclick="form1.r.value=parseInt(form1.a.value)/parseInt(form1.b.value)">
+</p><p><b> Result: </b> <input type="text" name="r"placeholder="Ghandhi" required></p> 
+</form>
+</Body>
+</html>
+
+
+
+
+
+function rev(){
+var a1=parseInt(document.form1.a.value);
+document.form1.r.innerHtml=a1;
+}
+function aaa(){form1.r.value=parseInt(form1.a.value)+parseInt(form1.b.value);}
+</script>
+
+
+
+<html><head>
+<title>registration FORM</title>
+<style> 
+form {border:orange; border-width:2px;padding:10px; border-style:solid;}
+body {padding: 0px 200px 0px 200px;}
+</style></head>
+<body>
+<FORM name=form1 action="PAYMENT HTML" onblur="return rev()"><center>
+<legend style="color:blue;"><b> <i>Calculator</i></b></legend></center>
+<p><b>First The  Number: </b><input type="text" name="a" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+</p><p><b> Result: </b> <input type="text" name="r"placeholder="Ghandhi" required></p>
+  
+</form>
+<script>
+
+</Body>
+</html>
+
+
+
+

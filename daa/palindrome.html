@@ -1,0 +1,12 @@
+<?php  
+function palindrome($n){  
+$m = $n; $a = 0;  
+while(floor($m)) {  
+$rem = $m % 10;$a = $a * 10 + $rem; $m = $m/10;} 
+return $a;}
+echo "Enter a number\n";
+$input = readline();  
+$num = palindrome($input);  
+if($input==$num){ echo "$input is a Palindrome ";} 
+else { echo "$input is not a Palindrome";  }  
+?>  

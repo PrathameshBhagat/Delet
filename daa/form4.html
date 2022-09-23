@@ -1,0 +1,25 @@
+
+
+<html><head>
+<title>registration FORM</title>
+<style> 
+form {border:orange; border-width:2px;padding:10px; border-style:solid;}
+body {padding: 0px 200px 0px 200px;}
+</style>
+<script>
+function aaa(){var a=parseInt(form1.a.value);form1.r.value=0;}
+</script>
+</head>
+<body>
+<FORM name=form1 action="PAYMENT HTML"><center>
+<legend style="color:blue;"><b> <i>Calculator</i></b></legend></center>
+<p><b>First Number: </b><input type="text" name="a" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+<b> Last Second: </b> <input type="text" name="b" placeholder="200" required></p> 
+<input type="button"value="+" onclick="aaa()">
+<input type="button"value="-" onclick="form1.r.value=parseInt(form1.a.value)-parseInt(form1.b.value)">
+<input type="button"value="*" onclick="form1.r.value=parseInt(form1.a.value)*parseInt(form1.b.value)">
+<input type="button"value="/" onclick="form1.r.value=parseInt(form1.a.value)/parseInt(form1.b.value)">
+</p><p><b> Result: </b> <input type="text" name="r"placeholder="Ghandhi" required></p> 
+</form>
+</Body>
+</html>

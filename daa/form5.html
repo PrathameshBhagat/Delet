@@ -1,0 +1,28 @@
+<html><head>
+<title>registration FORM</title>
+<style> 
+form {border:orange; border-width:2px;padding:10px; border-style:solid;}
+body {padding: 0px 200px 0px 200px;}
+</style>
+<script>
+function aaa(){var a=parseInt(form1.a.value);
+    var b, sum = 0;
+    var z = a;
+    while(a > 0)
+    {b = a % 10;
+      sum = sum * 10 + b;
+      a = parseInt(a / 10);    }
+
+form1.r.value=sum;}
+</script>
+</head>
+<body>
+<FORM name=form1 action="PAYMENT HTML"><center>
+<legend style="color:blue;"><b> <i>Reverse The Digit</i></b></legend></center>
+<p><b>Enter the  Number: </b><input type="text" name="a" placeholder="100"required >&nbsp&nbsp&nbsp</p><p>
+
+<input type="button"value="Reverse" onclick="aaa()">
+</p><p><b> Result: </b> <input type="text" name="r"placeholder="Ghandhi" required></p> 
+</form>
+</Body>
+</html>
