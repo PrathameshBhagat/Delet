@@ -1,0 +1,193 @@
+bawipo1355@bongcs.com
+bawipo3698
+
+https://github.com/RuiSantosdotme/control-esp32-esp8266-gpios-from-anywhere/tree/master/Code
+
+
+Hello there!! This website is created in HTML,CSS,PHP,SQL and JavaScript. The main Moto watch to enable backend to a website and to pratice and check the backend skills .
+
+The live working website is at https://prathameshbhagat.000webhostapp.com/
+
+As the main motive was to focus on the backend skills, hence the help of freely available HTML and CSS templates was taken in order to save time and energy
+
+In place of templates Bootastrap was also possible which might enhanced it's beauty, but the help of templates was taken to showcase skills to add back-end to pre-available websites.
+
+As of now ,it dosen't have any kind of data validation just very basic J.S validation is present, just to check if data if present or not it lacks server-side validation including client-sidevalidation.
+
+You land on index.php page where first you register your self on the site as an admin or user. Then you log in with your phone no and date of birth site checks for data on validation logs you in.
+
+On successfull login,if you are a admin you are shown list of all current users . Also when ever a new user registers admin gets a notification/ alert dilog box.
+/***********************************************************************
+<a style="text-decoration:none;" href="index.php" >
+
+
+
+				<div style="background:#000f00;" name="button" class="button login__submit">
+					<span class="button__text">
+RETURN To home page
+
+</span>
+					
+				</div></a>		
+/***********************************************************************
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">	
+
+/***********************************************************************
+<script type="text/javascript"> setInterval(function(){
+						<?php 
+						$n='PRAT';
+						$adm="SELECT userno FROM admin WHERE Name='$n'";
+						$amdr=mysqli_query($conn,$adm);
+						if($amdr!=NULL&&mysqli_num_rows($user)<(int)$amdr)/*edtit it for null enrties too*/
+						{ ?>
+				alert("new login detected");
+						<?php 
+						}  ?>},1000);
+</script>
+
+
+
+
+***************************************************************************************/
+<script>
+	$(document).ready(function(){
+		function o(){console.log("calling");
+			$.ajax({
+			url:"fetch.php?name="+"<?php echo $_GET['name']?>",
+			method:"GET",
+			});
+		}
+		setInterval(function (){o();;},1000);
+	
+});
+</script>
+
+***************************************************************************************/
+var snk=parent.document.getElementById('snk');
+var n=parent.document.createDocumentFragment('div');n.textContent='new';
+snk.appendChild(snk);	s
+***************************************************************************************/
+if(mysqli_num_rows($RUsers)>(int)$inoOfusers["userno"])
+{ $a=0;
+while($r=mysqli_fetch_assoc($RUsers))
+{
+	if($a<(int)$inoOfusers["userno"])//to print only new not older ones
+	{$a=$a+1;continue;}
+echo "<script>alert('Hi new User named: ".$r['Name']." found dear ".$aname."')</script>";
+}
+$QUdata="UPDATE admin SET userno='$n'WHERE Name='$aname'";
+$o=mysqli_query($conn,$QUdata);
+
+}
+
+
+if($a<(int)$inoOfusers["userno"])//to print only new not older ones
+	{$a=$a+1;continue;}
+***************************************************************************************/
+
+		<script type="text/javascript" >
+				document.write("<h1>hi</h1>");<?php echo $admin; ?>
+				let i='<?php echo $admin; ?>';
+				if(i==1)
+				{
+				//if admin we repeatedly call funtion to check for new logins
+				setInterval(function()
+				{
+					<?php 
+						$n=$row['Name'];
+						$adm="SELECT userno FROM admin WHERE Name='$n'";
+						$amdr=mysqli_query($conn,$adm);
+						if($amdr!=NULL&&mysqli_num_rows($user)<(int)$amdr)/*edtit it for null enrties too*/
+						{ ?>
+				alert("new login detected");
+						<?php 
+						}  ?>
+		
+				},1000);
+
+				}
+			</script>
+
+
+
+***************************************************************************************/
+***************************************************************************************/
+***************************************************************************************/
+<!-- Use a button to open the snackbar -->
+<button onclick="myFunction()">Show Snackbar</button>
+
+<!-- The actual snackbar -->
+<div id="snackbar">Some text some message..</div>
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+function myFunction() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+
+
+
+
+
+
+
+
+
