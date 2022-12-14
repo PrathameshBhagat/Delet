@@ -41,9 +41,11 @@ r("अंतमे","finally",$p);
 r("फेके","throw",$p); 
 //LAtest no issue 
 r("इअंक","enum");
+
+
 // Methords replace 
 r("स्कैनर","java.util.Scanner");
-r("अगलीरेखा","nextLine");
+//r("अगलीरेखा","nextLine");after हैअगलीरेखा 
 r("अगलादोहरा","nextBoolean");
 r("अगलाबाइट","nextByte");
 r("अगलाबड़ा","nextDouble");
@@ -54,13 +56,23 @@ r("अगलाछोटा","nextShort");
 r("मे","in");
 r("मान","values");//Enum methord 
 r("अभी","now");//date टाइम .. 
-r("रूप","ofPattern");
 r("स्वरूप","format");
+r("रूप","ofPattern");
+
+//Files 
+r("फाइलबनाए","createNewFile");
+r("फाइल","java.io.File");
+r("लिखे","write");
+r("बंद","close");
+r("हैअगलीरेखा","hasNextLine");r("है","has");
+r("अगलीरेखा","nextLine");
+r("नष्ट","delete");
+
 //Special classes 
+r("दिनांकऔरसमयस्वरूपण","java.time.DateTimeFormatter");
+r("दिनांकऔरसमय","java.time.LocalDateTime");
 r("दिनांक","java.time.LocalDate");//date टाइम 
 r("समय","java.time.LocalTime");
-r("दिनांकऔरसमय","java.time.LocalDateTime");
-r("दिनांकऔरसमयस्वरूपण","java.time.DateTimeFormatter");
 
 r("अंकगणितत्रुटि","ArithmeticException",$p); 
 r("फ़ाइलप्राप्तीमेत्रुति","FileNotFoundException",$p);
